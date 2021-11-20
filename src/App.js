@@ -1,24 +1,22 @@
-import logo from './logo.svg';
+import { Fragment } from 'react/cjs/react.production.min';
 import './App.css';
-
+import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import Navbar from './Core/Navbar/Navbar';
+import EditFormPage from './Pages/EditFormPage/EditFormPage';
+import AddTodoPage from './Pages/AddTodoPage/AddTodoPage'
+import HomePage from './Pages/HomePage/HomePage';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+    <Navbar/>
+    <Router>
+      <Switch>
+      <Route exact path="/" component={HomePage}/>
+        <Route exact path="editform" component={EditFormPage}/>
+        <Route path="/addtodo" component={AddTodoPage}/>
+      </Switch>
+    </Router>
+    </Fragment>
   );
 }
 

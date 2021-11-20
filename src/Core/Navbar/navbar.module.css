@@ -1,0 +1,22 @@
+.heading{
+    background-color: rgb(114, 110, 110);
+    height: 40px;
+}
+.logo{
+    color: red;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    height:100%;
+    padding-top: 7px;
+}
+.container div{
+    display: flex;
+    justify-content: space-between;
+}
+@media(max-width:600px){
+    .container{
+        width: 100%;
+    }
+}

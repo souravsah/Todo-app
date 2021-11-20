@@ -1,0 +1,29 @@
+.container{
+    width: 90%;
+    
+    height: 100%;
+    margin:  auto ;
+    padding-top: 30px;
+    padding-left: 5px;
+    
+}
+.container button{
+    display: block;
+    padding: 10px 12px;
+    border-radius: 5px 0 5px 0;
+    z-index: 1;
+}
+.container button:hover{
+cursor: pointer;
+background-color: cadetblue;
+}
+.todobutton{
+    background-color: rgb(146, 141, 141);
+    width: 100%;
+    height: 100px;
+}
+@media(max-width:700px){
+    .container{
+        width: 100%;
+    }
+}

@@ -1,0 +1,12 @@
+.Todolist{
+    width: 80%;
+    background-color: rgb(24, 22, 22);
+    margin:  auto;
+    padding: 1rem;
+    border-radius: 15px 0 15px 0px ;
+}
+@media(max-width:600px){
+    .Todolist{
+        width: 100%;
+    }
+}
