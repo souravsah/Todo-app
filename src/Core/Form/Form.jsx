@@ -21,6 +21,11 @@ const Form = ({name,handleChange,handleSubmit,data}) => {
         }>
             <input type="date" name="date" id="" onChange={handleChange} value={data.date}/>
         </div>
+        <div className={
+            formcss['form-content']
+        }>
+            <textarea name="" id="" name="text" rows="5" onChange={handleChange} ></textarea>
+        </div>
         <button type="submit">SUBMIT</button>
         </form>
     )

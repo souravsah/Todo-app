@@ -1,8 +1,10 @@
 form{
     background-color: rgb(97, 87, 87);
-    width: 50%;
+    width: 80%;
     margin: auto;
     padding: 20px;
+    border-radius: 10px 0 10px 0;
+    margin-top: 20px;
 }
 form .form-content{
     width: 80%;
@@ -27,9 +29,18 @@ form button{
 form .form-content h3{
     font-size: 1rem;
 }
+form .form-content textarea{
+    width:100%;
+    border: none;
+    outline: none;
+    height: 200px;
+}
 @media(max-width:600px){
     form{
         width: 100%;
 
+    }
+    form .form-content textarea{
+        height: 90px;
     }
 }
