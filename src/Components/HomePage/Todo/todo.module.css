@@ -10,6 +10,8 @@
     padding-left: 3px;
     padding-right: 3px;
     margin: 5px auto ;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
 }
 .details{
     display: flex;

@@ -2,6 +2,8 @@ import React,{createContext, useReducer} from 'react'
 import ExpenseReducer from "./ExpenseReducer"
 const initialState={
     todo:[],
+    Editdata:{},
+    filterdata:"",
 }
 export  const GlobalContext=createContext(initialState)
 export const GlobalProvider = ({children}) => {
@@ -19,13 +21,29 @@ export const GlobalProvider = ({children}) => {
     
           })
       }
+      const editData = (data) =>{
+        dispatch({
+          type:"EDIT_DATA",
+          payload:data,
+        })
+      }
+      const filterData = (data) =>{
+        dispatch({
+          type:"FILTER_DATA",
+          payload:data
+        })
+      }
         return (
         <GlobalContext.Provider 
         value={
             {
                 todo:state.todo,
+                Editdata:state.Editdata,
+                filterdata:state.filterdata,
+                editData,
                 addExpence,
                 deleteExpence,
+                filterData,
             }
         }>
         {children}

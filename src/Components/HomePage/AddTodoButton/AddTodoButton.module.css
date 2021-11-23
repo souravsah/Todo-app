@@ -20,10 +20,14 @@ background-color: cadetblue;
 .todobutton{
     background-color: rgb(146, 141, 141);
     width: 100%;
-    height: 100px;
+    height: 150px;
 }
 @media(max-width:700px){
     .container{
         width: 100%;
     }
+    .todobutton h1{
+        font-size: 1.5rem;
+    }
+    
 }
